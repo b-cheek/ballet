@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function DetailsScreen() {
+export default function SettingsScreen() {
   return (
     <View style={styles.container}>
-      <Text>Details</Text>
+      <Text>Upload</Text>
     </View>
   );
 }
