@@ -1,12 +1,13 @@
 import { View, Text, StyleSheet } from 'react-native';
-import Exercises from '@/src/components/exercises';
+import { useLocalSearchParams } from 'expo-router';
 
-export default function HomeScreen() {
+export default function DetailsScreen() {
+  const local = useLocalSearchParams();
+
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
-      <Exercises />
-    {/* TODO: maybe refactor this without using groups similar to the upload and settings pages */}
+      <Text>Exercise</Text>
+      <Text>{local.exercise}</Text>
     </View>
   );
 }
