@@ -1,10 +1,11 @@
-import React from "react";
-import { View, Text, SectionList, Pressable, StyleSheet } from "react-native";
+import globalStyles from "@/src/constants/globalStyles";
 import { router } from "expo-router";
+import React from "react";
+import { Pressable, SectionList, StyleSheet, Text, View } from "react-native";
 
 const Exercises: React.FC = () => {
   return (
-    <View style={styles.container}>
+    <View style={globalStyles.container}>
       <SectionList
         sections={[
           { title: "3/4", data: ["item1", "item2"] },
@@ -30,12 +31,6 @@ const Exercises: React.FC = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-
   sectionTitle: {
     fontSize: 20,
     fontWeight: "bold",

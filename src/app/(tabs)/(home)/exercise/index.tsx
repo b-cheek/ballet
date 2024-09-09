@@ -1,17 +1,10 @@
-import { View, Text, StyleSheet } from "react-native";
+import globalStyles from "@/src/constants/globalStyles";
+import { Text, View } from "react-native";
 
 export default function ExerciseScreen() {
   return (
-    <View style={styles.container}>
+    <View style={globalStyles.container}>
       <Text>New Exercise</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
