@@ -1,12 +1,12 @@
-import { View, Text, StyleSheet } from 'react-native';
-import Exercises from '@/src/components/exercises';
+import { View, Text, StyleSheet } from "react-native";
+import Exercises from "@/src/components/exercises";
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <Text>Home</Text>
       <Exercises />
-    {/* TODO: maybe refactor this without using groups similar to the upload and settings pages */}
+      {/* TODO: maybe refactor this without using groups similar to the upload and settings pages */}
     </View>
   );
 }
@@ -14,7 +14,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
 });

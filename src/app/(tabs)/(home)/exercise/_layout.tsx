@@ -1,12 +1,13 @@
-import { Stack } from 'expo-router';
+import { Stack } from "expo-router";
 
 export default function ExerciseLayout() {
   return (
     <Stack
       screenOptions={{
         headerShown: false,
-        headerTitle:"Exercise"
-      }}>
+        headerTitle: "Exercise",
+      }}
+    >
       <Stack.Screen name="index" />
     </Stack>
   );

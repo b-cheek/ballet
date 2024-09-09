@@ -1,7 +1,7 @@
-import { View, Text, StyleSheet } from 'react-native';
-import UploadForm from '@/src/components/uploadForm';
+import { View, Text, StyleSheet } from "react-native";
+import UploadForm from "@/src/components/uploadForm";
 
-export default function SettingsScreen() {
+export default function UploadScreen() {
   return (
     <View style={styles.container}>
       <Text>Upload</Text>
@@ -13,7 +13,7 @@ export default function SettingsScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
